@@ -143,3 +143,9 @@ About
 .content {
     display: none;
 }
+.tab-btn.active {
+    background: #fff;
+}
+.content.active {
+    display: block;
+}
