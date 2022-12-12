@@ -1,0 +1,145 @@
+/* ==============
+Fonts
+============== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+/* ==============
+Global styles
+============== */
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f1f5f8;
+    color: #102a42;
+    line-height: 1.5;
+    font-size: 14px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img:not(.logo) {
+    width: 100%;
+}
+img {
+    display: block;
+}
+h2, h4 {
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    font-family: "Roboto", sans-serif;
+}
+h2 {
+    font-size: 32px;
+}
+h4{
+    font-size: 14px;
+}
+p {
+    margin-bottom: 20px;
+    color: #617d98;
+}
+@media screen and (min-width: 800px) {
+    h2 {
+        font-size: 40px;
+        line-height: 1;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 1;
+    }
+    
+}
+
+/* section */
+.section {
+    padding: 80px 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+/* ===============
+About 
+=============== */
+.title {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.title p {
+    width: 80%;
+    margin: 0 auto;
+}
+.about-img {
+    margin-bottom: 32px;
+}
+.about-img img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 20rem;
+}
+@media screen and (min-width: 992px) {
+    .about-img {
+        margin-bottom: 0;
+    }
+}
+.about {
+    background: #fff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.btn-container {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tab-btn:nth-child(1) {
+    border-top-left-radius: 0.5rem;
+}
+.tab-btn:nth-child(3) {
+    border-top-right-radius: 0.5rem;
+}
+.tab-btn {
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    background: #dae2ec;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    letter-spacing: 4px;
+}
+.tab-btn:hover:not(.active) {
+    background: #ebf7ff;
+    color: #49a6e9;
+}
+.about-content {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 2rem 1.5rem;
+}
+.content {
+    display: none;
+}
